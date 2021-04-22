@@ -1,0 +1,1 @@
+INSERT INTO items (image, name, price ) VALUES ('/img/fruit1.jpg', 'Caramel', '25JD'),('/img/fruit2.jpg', 'Orange', '25JD'),('/img/fruit3.jpg', 'Grape', '15JD'),('/img/fruit4.jpg', 'Lemon', '5JD'),('/img/fruit5.jpg', 'Blueberry', '10JD'),('/img/fruit6.jpg', 'Watermelon', '12JD'),('/img/fruit7.jpg', 'Cucumber', '18JD'),('/img/fruit8.jpg', 'Pomegranate', '7JD');

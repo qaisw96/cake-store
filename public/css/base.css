@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    width: 83%;
+    margin: 0 auto;
+    background-color: rgba(226, 162, 182, 0.212);
+}
+header {
+  margin: 0 auto;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+
+}
+li {
+    list-style: none;
+}
+
+header #top-div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+header #top-div #icons {
+    display: flex;
+    justify-content: space-around;
+} 
+header #top-div #icons li {
+    margin-left: 4px ;
+} 
+
+header #top-div #icons li a {
+    padding: 6px 9px;
+    background-image: linear-gradient(to top, #884a5950 0%, #3f2922ab 100%);    
+}
+#logo {
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+#logo span {
+    color: rgba(158, 32, 32, 0.842);
+    font-size: 27px;
+}
+
+header nav {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 4%;
+    font-size: 13px;
+}
+
+header nav li a {
+    transition: .7s;
+    transition-property: color background-color;
+    padding: 10px;
+}
+
+nav  li a:hover {
+    color: whitesmoke;
+    background-color: rgba(158, 32, 32, 0.842);
+    
+}
+
+nav #about {
+    font-weight: 500;
+    color: rgba(158, 32, 32, 0.842);
+    transition: .7s;
+}
+
+nav #about:hover {
+    color: rgba(233, 222, 222, 0.842);
+    background-color: rgba(158, 32, 32, 0.842);
+}
+
+/* ---------------------- main ----------------*/
+.container {
+    margin-top: 3%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero {
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+#hero::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .5;
+    z-index: -1;
+}
+
+.container div {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0 0 100px 100px;
+    font-size: 20px;
+    color: rgb(218, 208, 208);
+    letter-spacing: 2px;
+
+
+}
+
+.container div a {
+    margin-top: 5%;
+    position: absolute;
+    border: 5px rgba(158, 32, 32, 0.842) solid;
+    padding: 9px;
+    color: rgb(218, 208, 208);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgba(255, 235, 205, 0.226);
+    transition: 1s ;
+    transition-property: color background-color;
+}
+
+.container div a:hover {
+    background-color: rgb(218, 208, 208);
+    color: rgba(26, 24, 22, 0.931);
+
+}
+
+/*-----------------middle-----------*/
+#middle {
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+
+#middle h1 {
+    padding: 20px;
+    font-size: 28px;
+    width: 25%;
+   
+}
+
+#middle p {
+    width: 50%;
+    font-size: 15px;
+    padding: 40px 20px 20px 20px;
+}
+
+#flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#flex div {
+    margin-bottom: 3%;
+    width: 250px;
+    height: 260px;
+    background-image: linear-gradient(to top, #884a59cc 0%, #3f2922 100%);    
+    text-align: center;
+    box-shadow: 6px 6px 2px #a09c9ca9;
+    font-size: 8px;
+    font-size: 8px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+#flex div img {
+    width: 250px;;
+    height: 200px;
+    padding: 8px;
+}
+#flex div p {
+    font-size: 12px;
+    color: lavender;
+} 
+
+#price {
+    margin-top: 3%;
+}
+
+/*----------------fieldset ------------------*/
+fieldset {
+    margin: 5% auto ;
+    height: 250px;
+    width: 80%;
+}
+
+fieldset form {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+fieldset form div {
+    width: 250px;
+    margin: 1% auto;
+    
+}
+fieldset form div legend {
+    margin: 0 auto;
+    width: 160.34px;
+    text-align: initial;
+    font-size: 11px;
+    margin-bottom: 4px;
+}
+
+fieldset form #order {
+    width: 100px;
+    height: 40px;
+    
+    
+}
+
+fieldset form div input , fieldset form div select {
+    height: 30px;
+    width: 160.33px;
+}
+fieldset form div input {
+    font-size: 10px;
+    font-weight: 100;
+}
+form #submit-div {
+    width: 100%;
+}
+
+form #submit-div input  {
+    border: 5px rgba(158, 32, 32, 0.842) solid;
+    color: rgb(32, 29, 29);
+    background-color: rgba(88, 81, 70, 0.226);
+    font-weight: bold;
+    transition: .5s ;
+    font-size: 12px;
+    letter-spacing: 1px;
+    transition-property: color background-color font-size padding ;
+}
+form #submit-div input:hover {
+    background-image: linear-gradient(to top, #884a5986 0%, #3f2922b6 100%);    
+    color: lavender;
+    font-size: 15px;
+}
+
+
+form input:focus::placeholder {
+    color: transparent;
+}
+
+form input:focus {
+      font-size: 13px;
+
+  }
+
+/* ------------footer -------------*/ 
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: inherit;
+    height: 180px;
+    margin-top: 8%;
+    line-height: 20px;
+    background-image: linear-gradient(to top, #884a59cc 0%, #3f292291 100%);    
+}
+
+footer div {
+    padding: 17px 0 0 0;
+}
+
+footer div  #icons-footer li {
+    margin-left: 10px ;
+    margin-top: 12%;
+    
+} 
+footer #icons-footer li a {
+    padding: 6px 9px;
+    background-image: linear-gradient(to top, #884a5950 0%, #3f2922ab 100%);    
+}
+
+
+footer div .headers-row {
+    font-size: 12px;
+    font-weight:bold;
+}
+
+footer div .para-footer {
+    padding-top: 15px;
+    line-height: 25px;
+}
+
+
+
+  
