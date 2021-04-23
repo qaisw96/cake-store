@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/base.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <head>
+        
+        <h1>welcome to your dash</h1>
+    </head>
+    <main id="main-order">
+        <section id="orders-section">
+
+            <% orders.forEach(order => { %>
+                <form class="delete-form">
+                <p>
+                   <%= order.person_name %>  
+                </p>
+                <p>
+                    <%=order.phone_number  %> 
+                </p>
+                <p>
+                   <%=order.delivery_place  %>   
+                </p>
+                <p>
+                   <%= order.item_order %>   
+                </p>
+                <p>
+                    <%=  order.quantity%>  
+                </p>
+                <p>
+                    <%=  order.posting_date%>  
+                </p>
+    
+                    <input type="hidden" name="id" value="<%= order.id %> ">
+                    <input type="submit" class="delete-order" value="delete">
+                </form>
+    
+          <%  }) %> 
+        </section>
+
+        <section id="items-section">
+            <% items.forEach(item => { %>
+                <form action="" class="update-form">
+                    <input type="text" name="id" value="<%= item.id %> ">
+                    <input type="text" name="image" value="<%= item.image %> ">
+                    <input type="text" name="name" value="<%= item.name %> ">
+                    <input type="text" name="price" value="<%= item.price %> ">
+
+                    <input type="submit" value="update" >
+                    
+                </form>
+              <%  });  %> 
+        </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/app.js"></script>
+
+</body>
+</html>
