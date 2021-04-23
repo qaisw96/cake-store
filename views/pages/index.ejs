@@ -56,37 +56,37 @@
                 </div>
            <%  }); %> 
         </section>
-        <fieldset> 
+        <fieldset id="fieldset"> 
             <legend style="margin-left: 10px; font-size: medium;" >  Make your order </legend>
-            <form action="/save" method="POST">
+            <form  id="order-form"  >
                 <div>
                     <legend>Your name</legend>
-                    <input type="text" placeholder="enter your name">
+                    <input type="text" name="name" placeholder="enter your name">
                 </div>
                 <div>
                     <legend>Phone Number</legend>
-                    <input type="text" placeholder="enter your phone num">
+                    <input type="text" id="phone" name="phone_number" placeholder="enter your phone num" required>
                 </div>
                 <div>
                     <legend>Your Location</legend>
-                    <input type="text" placeholder="enter your location">
+                    <input type="text" name="location" placeholder="enter your location" required>
                 </div>
                 <div>
                     <legend>Which juice</legend>
-                    <select name="" id="">
+                    <select name="juice" id="" required>
                         <% items.forEach(item => { %>
                             
-                            <option value=""><%=item.name %></option>
+                            <option value="<%= item.name %> "><%=item.name %></option>
                        <% });  %> 
                     </select>
                 </div>
                 <div>
                     <legend>Quantity</legend>
-                    <input type="number" placeholder="How many">
+                    <input type="number" name="quantity" placeholder="How many" required>
                 </div>
                 <div id="submit-div">
 
-                    <input type="submit" value="Order" id="order">
+                    <input type="submit" value="Order" id="order" >
                 </div>
             </form>
         </fieldset>
@@ -127,5 +127,7 @@
 
     
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/app.js"></script>
 </body>
 </html>

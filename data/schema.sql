@@ -18,5 +18,7 @@ CREATE TABLE orders (
     delivery_place VARCHAR(255),
     item_order VARCHAR(255),
     quantity NUMERIC,
-    notes VARCHAR(255)
+    notes VARCHAR(255),
+    posting_date DATE NOT NULL DEFAULT CURRENT_DATE 
+
 );

@@ -175,9 +175,9 @@ nav #about:hover {
     flex-wrap: wrap;
 }
 #flex div {
-    margin-bottom: 3%;
-    width: 250px;
-    height: 260px;
+    margin-bottom: 5%;
+    width: 300px;
+    height: 310px;
     background-image: linear-gradient(to top, #884a59cc 0%, #3f2922 100%);    
     text-align: center;
     box-shadow: 6px 6px 2px #a09c9ca9;
@@ -188,8 +188,8 @@ nav #about:hover {
 }
 
 #flex div img {
-    width: 250px;;
-    height: 200px;
+    width: 300px;;
+    height: 250px;
     padding: 8px;
 }
 #flex div p {
@@ -203,9 +203,11 @@ nav #about:hover {
 
 /*----------------fieldset ------------------*/
 fieldset {
+    background-image: linear-gradient(to top, #884a5950 0%, #3f2922ab 100%);    
     margin: 5% auto ;
     height: 250px;
     width: 80%;
+    font-weight: bold;
 }
 
 fieldset form {
@@ -311,4 +313,33 @@ footer div .para-footer {
 
 
 
-  
+
+.res {
+  text-align: center;
+  margin-top: 4%;
+  font-size: medium;
+}
+
+#fieldset-after-submit {
+    height: 280px;
+}
+
+.res-show {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(33, 153, 117);
+}
+/*--------------------dash page----------*/
+
+
+#orders-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.delete-form {
+    height: 200px;
+    width: 200px;
+}
