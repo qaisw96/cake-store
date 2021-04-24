@@ -37,6 +37,8 @@ $(() => {
 
 
 $('.delete-form').on('submit',function authenticate(event) {
+    $('#total-order').fadeOut(1000)
+
     $(this).remove()
     event.preventDefault()
     $.ajax({
@@ -55,8 +57,11 @@ $('.delete-form').on('submit',function authenticate(event) {
               
           }
       });
+      $('#total-order').fadeIn(300)
+
     })
 
+    
 
     $('.update-form').on('submit',function authenticate(event) {
         $(this).fadeOut(1000)

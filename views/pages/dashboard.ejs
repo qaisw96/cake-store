@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/base.css">
+
     <title>Document</title>
 </head>
 <body>
     <header>
-        Your Dash
     </header>
-    <main>
+    <main id="check-dash-main">
+        <h1> Your Dash : </h1>
         <form action="/dashboard/open" method="POST">
-            <input type="text" placeholder="enter your name" required name="user_name">
-            <input type="text" placeholder="enter your password" required name="password">
-            <input type="submit">
+            <input type="text" placeholder="enter your name" required name="user_name" > <br>
+            <input type="text" placeholder="enter your password" required name="password"> <br>
+            <input type="submit" value="log in" id="log-in">
         </form>
     </main>
     

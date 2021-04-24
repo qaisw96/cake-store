@@ -331,15 +331,87 @@ footer div .para-footer {
     color: rgb(33, 153, 117);
 }
 /*--------------------dash page----------*/
-
+#dash-header {
+    margin-top: 2%;
+    text-align: center;
+}
 
 #orders-section {
+    margin: 4% 0 ;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.delete-form {
+    font-size: 11px;
+    line-height: 20px;
+    height: 220px;
+    width: 220px;
+    padding: 10px;
+    border: #3f2922 3px solid;
+}
+
+.delete-order {
+    width: 35%;
+}
+
+
+#seperate-div {
+    height: 10px;
+    width: 100%;
+    background-color: #3f2922;
+}
+
+#items-section {
+    margin-top: 4%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.delete-form {
-    height: 200px;
-    width: 200px;
+
+.update-form {
+    margin-bottom: 2%;
+    width: 100%;
+    height: 40px;
+    border: grey 1px dashed  ;
+    
+}
+
+.update-form .id {
+    width: 30px;
+    margin-right: 20px;
+}
+
+.update-form input {
+    margin-right: 20px;
+    height: 35px;
+}
+
+.update-item {
+    width: 60px;
+    height: 30px;
+    margin-left: 50px;
+}
+
+
+/*-----------------check-dash-page--------------*/
+
+#check-dash-main {
+    margin-top: 5%;
+    text-align: center;
+}
+
+#check-dash-main form input {
+    margin-top: 20px;
+    width: 20%;
+    height: 40px;
+}
+
+#log-in {
+    width: 10%;
+    height: 35px;
+    background-color: grey;
 }
