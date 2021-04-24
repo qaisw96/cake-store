@@ -9,31 +9,38 @@
     <title>Document</title>
 </head>
 <body>
-    <head>
+    <header id="dash-header">
         
-        <h1>welcome to your dash</h1>
-    </head>
+        <h1 >Welcome to your dash</h1>
+    </header>
     <main id="main-order">
+        <h2 id="total-order">Total Orders : <%= orders.length  %> </h2>
         <section id="orders-section">
 
             <% orders.forEach(order => { %>
                 <form class="delete-form">
                 <p>
+                    Name : 
                    <%= order.person_name %>  
                 </p>
                 <p>
+                    Phone :
                     <%=order.phone_number  %> 
                 </p>
                 <p>
+                    Place : 
                    <%=order.delivery_place  %>   
                 </p>
                 <p>
+                    Item : 
                    <%= order.item_order %>   
                 </p>
                 <p>
+                    Quantity :
                     <%=  order.quantity%>  
                 </p>
                 <p>
+                    Date : 
                     <%=  order.posting_date%>  
                 </p>
     
@@ -43,16 +50,20 @@
     
           <%  }) %> 
         </section>
-
+        <div id="seperate-div"></div>
         <section id="items-section">
             <% items.forEach(item => { %>
                 <form action="" class="update-form">
-                    <input type="text" name="id" value="<%= item.id %> ">
+                    id : 
+                    <input type="text" name="id" value="<%= item.id %> " class="id">
+                    Image : 
                     <input type="text" name="image" value="<%= item.image %> ">
+                    Name : 
                     <input type="text" name="name" value="<%= item.name %> ">
+                    Price : 
                     <input type="text" name="price" value="<%= item.price %> ">
 
-                    <input type="submit" value="update" >
+                    <input type="submit" value="update" class="update-item" >
                     
                 </form>
               <%  });  %> 
