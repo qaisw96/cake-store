@@ -81,9 +81,35 @@ $('.delete-form').on('submit',function authenticate(event) {
                     // alert("successfully authenticated!")
                 } else if(data.status == "failed") {
                     // alert("failed authentication!")
-                }
-                
             }
-        });
-        $(this).fadeIn(300)
-        })
+                
+    }
+  });
+ $(this).fadeIn(300)
+})
+
+
+// window.onscroll = function() {myFunction()};
+
+// let header = document.getElementById("myHeader");
+// let nav = document.getElementById("header-nav");
+// let sticky = header.offsetTop;
+
+// function myFunction() {
+//     $('.nav-css').attr('class', 'nav-fix')
+//     if (window.pageYOffset > sticky) {
+//     header.classList.add("sticky");
+//     nav.classList.add("header-nav-scroll");
+//     $('.nav-css').addClass('nav-color')
+//     } else {
+//     header.classList.remove("sticky");
+//     nav.classList.remove("header-nav-scroll");
+//     $('.nav-css').removeClass('nav-color')
+//     }
+// }
+        
+$('#nav-bar').hide()
+$('.bar-icon').on('click', () => {
+    $('#nav-bar').toggle()
+
+})

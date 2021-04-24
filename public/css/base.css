@@ -13,10 +13,11 @@ html {
     margin: 0 auto;
     background-color: rgba(226, 162, 182, 0.212);
 }
-header {
-  margin: 0 auto;
 
-}
+
+/* .fixed-header {
+    position: fixed;
+} */
 a{
     text-decoration: none;
     color: black;
@@ -64,6 +65,14 @@ header nav {
     font-size: 13px;
 }
 
+
+
+header nav, #logo {
+    /* background-color: indigo;
+    position: fixed;
+    z-index: 1; */
+}
+
 header nav li a {
     transition: .7s;
     transition-property: color background-color;
@@ -101,7 +110,7 @@ nav #about:hover {
     background-size: cover;
     background-position: top center;
     position: relative;
-    z-index: 1;
+    z-index: 0;
 }
 
 #hero::after {
@@ -178,7 +187,7 @@ nav #about:hover {
     margin-bottom: 5%;
     width: 300px;
     height: 310px;
-    background-image: linear-gradient(to top, #884a59cc 0%, #3f2922 100%);    
+    background-image: linear-gradient(to top, #884a59c2 0%, #3f2922 100%);    
     text-align: center;
     box-shadow: 6px 6px 2px #a09c9ca9;
     font-size: 8px;
@@ -414,4 +423,370 @@ footer div .para-footer {
     width: 10%;
     height: 35px;
     background-color: grey;
+}
+
+.sticky {
+    position: fixed;
+    text-align: start;
+    top: 0;
+    margin-top: 0;
+    width: 83%;
+    z-index: 1;
+    background-image: linear-gradient(to top, #965b6a 0%, #3f2922 100%);    
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+
+.header-nav-scroll {
+    margin-top: 2%;
+}
+
+.nav-color {
+    color: lavender;
+
+}
+
+.bar-icon {
+    display: none;
+}
+
+#nav-bar {
+    display: none;
+}
+
+
+/*################### Mobile Screen ###########*/ 
+
+
+
+@media screen and (max-width:430px){
+
+    header #top-div {
+        display: none;
+    
+    }
+    
+    .bar-icon {
+        display: block;
+       
+    }
+    
+    #myHeader {
+        margin-top: 4%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #myHeader li {
+        margin-top: 7px;
+    }
+
+    #myHeader li a {
+        padding: 6px 9px;
+        background-color: #3f2922ce;
+        color: aliceblue;
+    }
+    #logo {
+        margin-top: 3.5px;
+       text-align: start;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    #logo span {
+        color: rgba(158, 32, 32, 0.842);
+        font-size: 18px;
+    }
+    
+    header nav {
+        display: none;
+    }
+    
+    #nav-bar {
+        line-height: 30px;
+        width: 100%;
+        background-image: linear-gradient(to top, #965b6a 0%, #3f2922 100%);    
+        text-align: center;
+        display: block;
+        padding: 10px;
+    }
+
+    #nav-bar li a {
+        color: cornsilk;
+        font-size: 10px;
+    }
+
+    
+    /* ---------------------- main ----------------*/
+    .container {
+        margin-top: 7%;
+        height: 300px;
+    }
+    
+    .container div {
+        padding: 0 0 80px 75px;
+        font-size: 11px;
+    }
+    
+    .container div a {
+        margin-top: 5%;
+        position: absolute;
+        border: 5px rgba(158, 32, 32, 0.842) solid;
+        padding: 9px;
+        color: rgb(218, 208, 208);
+        font-size: 11px;
+        font-weight: bold;
+        background-color: rgba(255, 235, 205, 0.226);
+        transition: 1s ;
+        transition-property: color background-color;
+    }
+    
+    .container div a:hover {
+        background-color: rgb(218, 208, 208);
+        color: rgba(26, 24, 22, 0.931);
+    
+    }
+    
+    /*-----------------middle-----------*/
+    #middle {
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 1%;
+    }
+    
+    #middle h1 {
+        padding: 15px;
+        font-size: 12px;
+        width: 35%;
+       
+    }
+    
+    #middle p {
+        width: 60%;
+        font-size: 9px;
+        padding: 25px 20px 20px 20px;
+    }
+    
+    #flex div {
+        margin-bottom: 5%;
+        width: 220px;
+        height: 240px;
+    }
+    
+    #flex div img {
+        width: 220px;;
+        height: 190px;
+    }
+    #flex div p {
+        font-size: 10px;
+    } 
+
+    /*----------------fieldset ------------------*/
+
+    fieldset {
+        background-image: linear-gradient(to top, #884a5950 0%, #3f2922ab 100%);    
+        margin: 5% auto ;
+        height: 280px;
+        width: 80%;
+        font-weight: bold;
+    }
+    
+    fieldset form {
+        display: block;
+    }
+    
+    fieldset form div {
+        width: 250px;
+        margin: 1% auto;
+        
+    }
+    fieldset form div legend {
+        margin: 0 auto;
+        width: 160.34px;
+        text-align: initial;
+        font-size: 9px;
+        margin-bottom: 4px;
+        margin-top: 7px;
+    }
+    
+    fieldset form #order {
+        margin: 1%;
+        width: 53px;
+        height: 28px;
+    }
+    
+    
+    fieldset form div input , fieldset form div select {
+        height: 22px;
+        width: 160.33px;
+    }
+    fieldset form div input {
+        font-size: 8px;
+        font-weight: 80;
+    }
+    form #submit-div {
+        width: 100%;
+    }
+
+    
+    /* ------------footer -------------*/ 
+    footer {
+        padding: 0 6px;
+        display: flex;
+        justify-content: space-around;
+        align-items: inherit;
+        height: 145px;
+        margin-top: 8%;
+        background-image: linear-gradient(to top, #884a59cc 0%, #3f292291 100%);    
+    }
+
+    footer div {
+        width: 30%;
+    }
+    
+
+    
+    footer div  #icons-footer li {
+        margin-left: 10px ;
+        margin-top: 12%;
+        
+    } 
+    footer #icons-footer li a {
+        padding: 6px 9px;
+        background-image: linear-gradient(to top, #884a5950 0%, #3f2922ab 100%);    
+    }
+    
+    
+    footer div .headers-row {
+        font-size: 8px;
+        font-weight:bold;
+    }
+    
+    footer div .para-footer {
+        font-size: 7px;
+    }
+    
+    
+    
+    
+    .res {
+      text-align: center;
+      margin-top: 4%;
+      font-size: medium;
+    }
+    
+    #fieldset-after-submit {
+        height: 280px;
+    }
+    
+    .res-show {
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        color: rgb(33, 153, 117);
+    }
+    /*--------------------dash page----------*/
+    #dash-header {
+        margin-top: 2%;
+        text-align: center;
+    }
+    
+    #orders-section {
+        margin: 4% 0 ;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+    }
+    
+    .delete-form {
+        font-size: 11px;
+        line-height: 20px;
+        height: 220px;
+        width: 220px;
+        padding: 10px;
+        border: #3f2922 3px solid;
+    }
+    
+    .delete-order {
+        width: 35%;
+    }
+    
+    
+    #seperate-div {
+        height: 10px;
+        width: 100%;
+        background-color: #3f2922;
+    }
+    
+    #items-section {
+        margin-top: 4%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    
+    .update-form {
+        margin-bottom: 2%;
+        width: 100%;
+        height: 40px;
+        border: grey 1px dashed  ;
+        
+    }
+    
+    .update-form .id {
+        width: 30px;
+        margin-right: 20px;
+    }
+    
+    .update-form input {
+        margin-right: 20px;
+        height: 35px;
+    }
+    
+    .update-item {
+        width: 60px;
+        height: 30px;
+        margin-left: 50px;
+    }
+    
+    
+    /*-----------------check-dash-page--------------*/
+    
+    #check-dash-main {
+        margin-top: 5%;
+        text-align: center;
+    }
+    
+    #check-dash-main form input {
+        margin-top: 20px;
+        width: 20%;
+        height: 40px;
+    }
+    
+    #log-in {
+        width: 10%;
+        height: 35px;
+        background-color: grey;
+    }
+    
+    .sticky {
+        position: fixed;
+        text-align: start;
+        top: 0;
+        margin-top: 0;
+        width: 83%;
+        z-index: 1;
+        background-image: linear-gradient(to top, #965b6a 0%, #3f2922 100%);    
+        margin: auto;
+        padding-bottom: 15px;
+    }
+    
+    
+    
+    
+
 }
