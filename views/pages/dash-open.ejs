@@ -9,12 +9,12 @@
     <title>Document</title>
 </head>
 <body>
-    <header id="dash-header">
+    <header id="dashboard-header">
         
-        <h1 >Welcome to your dash</h1>
+        <p >Welcome to your dash</p>
+        <p id="total-order"> Total Orders : <%= orders.length  %> </p>
     </header>
     <main id="main-order">
-        <h2 id="total-order">Total Orders : <%= orders.length  %> </h2>
         <section id="orders-section">
 
             <% orders.forEach(order => { %>
@@ -52,6 +52,7 @@
         </section>
         <div id="seperate-div"></div>
         <section id="items-section">
+            <p>Items :</p>
             <% items.forEach(item => { %>
                 <form action="" class="update-form">
                     id : 
