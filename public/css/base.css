@@ -213,10 +213,8 @@ nav #about:hover {
 
 /*----------------fieldset ------------------*/
 fieldset {
-    /* background-image: linear-gradient(to top, #884a5950 0%, #3f2922ab 100%);   */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
-  
     margin: 5% auto ;
     height: 250px;
     width: 80%;
@@ -296,7 +294,7 @@ footer {
     height: 180px;
     margin-top: 8%;
     line-height: 20px;
-    background-image: linear-gradient(to top, #884a59cc 0%, #3f292291 100%);    
+    background-image: linear-gradient(to top, #965b6a 0%, #3f2922 100%); 
 }
 
 footer div {
@@ -488,7 +486,7 @@ footer div .para-footer {
 
     #myHeader li a {
         padding: 9px 11px;
-        background-color: #3f2922ce;
+        background-image: linear-gradient(to top, #965b6a 0%, #3f2922 100%); 
         color: aliceblue;
     }
     #logo {
@@ -535,21 +533,11 @@ footer div .para-footer {
     .container div a {
         margin-top: 5%;
         position: absolute;
-        border: 5px rgba(158, 32, 32, 0.842) solid;
         padding: 9px;
-        color: rgb(218, 208, 208);
         font-size: 11px;
-        font-weight: bold;
-        background-color: rgba(255, 235, 205, 0.226);
-        transition: 1s ;
-        transition-property: color background-color;
     }
     
-    .container div a:hover {
-        background-color: rgb(218, 208, 208);
-        color: rgba(26, 24, 22, 0.931);
-    
-    }
+   
     
     /*-----------------middle-----------*/
     #middle {
@@ -645,12 +633,7 @@ footer div .para-footer {
     
     /* ------------footer -------------*/ 
     footer {
-        padding: 0 6px;
-        display: flex;
-        justify-content: space-around;
         height: 130px;
-        margin-top: 8%;
-        background-image: linear-gradient(to top, #965b6a 0%, #3f2922 100%); 
         color: lavender;
         text-align: center;
    
@@ -659,19 +642,14 @@ footer div .para-footer {
     footer div {
         width: 30%;
     }
-
     
     footer div  #icons-footer li {
-        margin-left: 10px ;
-        margin-top: 12%;
-        margin: -10px;
-                
+        margin: -10px;     
     } 
     footer #icons-footer li a {
         margin-top: 13%;
         color: lavender;
         padding: 5px 7px;
-        background-image: linear-gradient(to top, #884a5950 0%, #3f2922ab 100%);    
     }
     
     
@@ -683,26 +661,12 @@ footer div .para-footer {
     footer div .para-footer {
         font-size: 7px;
     }
-    
-    
-    
-    
-    .res {
-      text-align: center;
-      margin-top: 4%;
-      font-size: 10px;
-    }
-    
-    #fieldset-after-submit {
-        height: 280px;
-    }
-    
+
     .res-show {
-        display: block;
-        text-align: center;
         font-size: 11.5px;
-        color: rgb(33, 153, 117);
     }
+
+    
     /*--------------------dash page----------*/
     #dash-header {
         margin-top: 2%;
@@ -771,18 +735,26 @@ footer div .para-footer {
     
     
     /*-----------------check-dash-page--------------*/
-    
+    #check-dash-main form {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);    
+        margin-top: 8%;
+        height: 200px;
+    }
     #check-dash-main {
-        margin-top: 5%;
+        margin-top: 7%;
         text-align: center;
     }
     
     #check-dash-main form input {
         margin-top: 20px;
-        width: 20%;
-        height: 40px;
+        width: 150px;
+        height: 30px;
     }
-    
+    #check-dash-main form input:nth-child(5) {
+        width: 100px;
+    }
+   
     #log-in {
         width: 10%;
         height: 35px;
