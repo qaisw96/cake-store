@@ -463,6 +463,14 @@ footer div .para-footer {
 
 
 @media screen and (max-width:430px){
+    html {
+        font-size: 10px;
+        font-family: 'Montserrat', sans-serif;
+        width: 95%;
+        margin: 0 auto;
+        background-color: rgba(226, 162, 182, 0.212);
+    }
+    
 
     header #top-div {
         display: none;
