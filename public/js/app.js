@@ -113,3 +113,8 @@ $('.bar-icon').on('click', () => {
     $('#nav-bar').toggle()
 
 })
+
+window.addEventListener('scroll', () => {
+    let header = document.getElementById('myHeader')
+    header.classList.toggle('sticky', window.scrollY>0)
+})

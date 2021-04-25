@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
 
 * {
@@ -15,9 +16,7 @@ html {
 }
 
 
-/* .fixed-header {
-    position: fixed;
-} */
+
 a{
     text-decoration: none;
     color: black;
@@ -188,7 +187,6 @@ nav #about:hover {
     width: 300px;
     height: 310px;
     background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
-    /* background-color: #4CAF50; */
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     font-size: 8px;
@@ -483,25 +481,32 @@ footer div .para-footer {
     }
     
     #myHeader {
-        margin-top: 4%;
+        /* margin-top: 4%; */
+        padding-top: 15px;
         display: flex;
         justify-content: space-between;
     }
 
-    #myHeader li {
-        margin-top: 7px;
+    #logo {
+        transition: .6s;
+        text-align: start;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+ 
+    .sticky {
+        padding: 0 7px 5px 7px;
+        width: 95%;
+        position: fixed; 
+        margin-top: 0;
+
+
     }
 
     #myHeader li a {
         padding: 9px 11px;
         background-image: linear-gradient(to top, #965b6a 0%, #3f2922 100%); 
         color: aliceblue;
-    }
-    #logo {
-        margin-top: 3.5px;
-       text-align: start;
-        font-size: 20px;
-        letter-spacing: 2px;
     }
     #logo span {
         color: rgba(158, 32, 32, 0.842);
