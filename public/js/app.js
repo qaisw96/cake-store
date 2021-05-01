@@ -114,7 +114,7 @@ $('.bar-icon').on('click', () => {
 
 })
 
-window.addEventListener('scroll', () => {
-    let header = document.getElementById('myHeader')
-    header.classList.toggle('sticky', window.scrollY>0)
-})
+// window.addEventListener('scroll', () => {
+//     let header = document.getElementById('myHeader')
+//     header.classList.toggle('sticky', window.scrollY>0)
+// })
